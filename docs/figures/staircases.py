@@ -131,8 +131,8 @@ def main(n=40, seed=None):
     )
     fig.text(0.04, 0.955, intro, fontsize=10.8, color=INK, va="top", linespacing=1.45)
     foot = (
-        f"Illustration regenerated 2026-10-09. Random instance: n = {n}, uniform random lists and types (seed {s}). Both matchings were checked for stability "
-        "and for the staircase property by brute force.\n"
+        f"Illustration regenerated 2026-10-09. Random instance: n = {n}, uniform random lists and types (seed {s}).\n"
+        "Both matchings were checked for stability and for the staircase property by brute force.\n"
     )
     fig.text(0.04, 0.025, foot, fontsize=9, color=MUTED, va="bottom", linespacing=1.5)
     out = str(__import__("pathlib").Path(__file__).with_name("staircases.png"))

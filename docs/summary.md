@@ -100,5 +100,7 @@ proved lower bound for lattice listing.
 
 The shape of possible rotation posets, full SEP, and bounds beyond the stated
 proposal models remain open in this research. The anonymous external draft
-claims a general subquadratic algorithm; its end bound and packed implementation
-have not been independently audited here.
+claims a general subquadratic algorithm. Its structural projection theorem
+(Theorem 4.11, including the end bound) and unique minimum-seam characterization
+(Proposition A.3) are independently confirmed (P, A+, 2026-10-09). Section 5's
+packed implementation and running-time claim remain unaudited (A0).

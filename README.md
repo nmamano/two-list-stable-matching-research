@@ -22,8 +22,10 @@ Research done with AI agents (Claude and GPT models).
 - **B11/B12/B14 — proved, audited with model limits (P, A+ / A~):** explicit
   families force quadratic work for specified proposal and unit-charge models.
   These bounds do not apply to every stable-matching algorithm.
-- **Anonymous draft — external claim, not fully audited here:** an anonymous
-  author claims deterministic `O(n^2 sqrt(log log n / log n))` time. We include
+- **Anonymous draft — structure proved and audited (P, A+); runtime unaudited (A0):**
+  an anonymous author claims deterministic `O(n^2 sqrt(log log n / log n))` time.
+  The structural projection theorem and unique minimum-seam characterization
+  were independently confirmed on 2026-10-09. We include
   the [draft](paper/twolist-subquadratic.pdf) and a [scope note](docs/subquadratic.md).
   Our cover implementation is a finite correctness check, not that fast algorithm.
 

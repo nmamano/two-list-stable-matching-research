@@ -62,7 +62,7 @@ is Y-labeled in mu and X-labeled in mu' (a *B-boundary*). Y-runs are the same wi
 goes from a B to an A with d increasing. Women inside a run keep their label. With k X-runs, the
 cycle reads A_0 B_0 A_1 B_1 ... A_{k-1} B_{k-1} with X-runs R_i = (A_i, B_i) and Y-runs
 S_i = (B_i, A_{i+1}). Since only boundary women change label,
-  dXX(rho) = #(x-type B's) - #(x-type the run-buffer implementation).                                      (1)
+  dXX(rho) = #(x-type B's) - #(x-type A's).                                      (1)
 
 **Flight lemma.** The flight of an X-man f of rho is (c(mu(f)), c(mu'(f))]; its starter is mu(f), its
 lander mu'(f). Let f != g have intersecting flights, c(mu(f)) < c(mu(g)).
@@ -83,7 +83,7 @@ by T2. Take v = B_R' (nested) or the R-woman B_R (crossing). K3 is the mirror fo
 **Chain lemma (K1).** Boundary women of the same type are comparable in the product order on (c, d).
 - (P1) A and B: if c(A) < c(B) and d(A) > d(B), C4 in mu' (B X-labeled) makes A X-labeled; if c(B) <
   c(A) and d(B) > d(A), C4 in mu (A X-labeled) makes B X-labeled. Both false.
-- (P2) Two the run-buffer implementation with c(A1) < c(A2), d(A1) > d(A2): let p_k = mu(A_k) (X-men), l_1 = mu'(A1) (Y-man).
+- (P2) Two A's with c(A1) < c(A2), d(A1) > d(A2): let p_k = mu(A_k) (X-men), l_1 = mu'(A1) (Y-man).
   A1 sees p_2, so p_1 > p_2 in their common list. A1 improves: l_1 > p_1. If d(mu(l_1)) > d(A2), A2
   sees l_1 in mu, so p_2 > l_1; else A2 is strictly inside l_1's move, so p_2 > l_1 by F2. Cycle.
 - (P3) Two B's with c(B1) < c(B2), d(B1) > d(B2): let l_k = mu(B_k) (Y-men), p_2 = mu'(B2). B2 sees
@@ -103,8 +103,8 @@ d-adjacent pair.
 
 *Proof.* Induction on k; the mirror (c, A, X-runs) <-> (d, B, Y-runs) keeps the hypotheses and GOOD.
 - k = 1: if type(A_0) = type(B_0), K1 and c(A_0) < c(B_0) give d(A_0) < d(B_0), against K4.
-- No same-type run, k >= 2, is impossible: types alternate around the cycle, so all the run-buffer implementation have one
-  type and all B's the other. K2/K3 forbid nested runs, K1 makes the the run-buffer implementation and the B's chains. For
+- No same-type run, k >= 2, is impossible: types alternate around the cycle, so all A's have one
+  type and all B's the other. K2/K3 forbid nested runs, K1 makes the A's and the B's chains. For
   non-nested intervals the order by left ends equals the order by right ends, so rank(A_i) = rank(B_i)
   (X-runs, in c) and rank(B_i) = rank(A_{i+1}) (Y-runs, in d). So A_i = A_{i+1} and k = 1.
 - A same-type Y-run exists (else use the mirror). (a) Choose a same-type Y-run S_i, of type tau, with
@@ -204,7 +204,7 @@ the x-type points z_f, A (c(z_f) < c(A)) gives d(A) > d(z_f) > d(y*). QED
 c(A) is not in W^{+1}(nu).
 *Proof.* t = c(A), nu' = nu/tau. p = nu(A) has a(p) = kappa_a(t) (O2); l = nu'(A) is the last Y-man of
 the Y-run ending at A, a(l) < a(p); u = nu(l), and the B-boundary beta starting that Y-run has
-d(beta) <= d(u) and is the run-buffer implementation d-predecessor. For y* of Lemma 9: b(nu(y*)) >= kappa_b(t) (if y* is an A,
+d(beta) <= d(u) and is A's d-predecessor. For y* of Lemma 9: b(nu(y*)) >= kappa_b(t) (if y* is an A,
 by O2; if y* is a B, the last X-man p* of its X-run is in Q(t) and y* improves to p*). Also
 d(y*) <= d(beta) <= d(u). Let (A', B') be a +1-witness with c(A') <= t <= c(B'). By O2, B' prefers l
 to her partner, so d(u) < d(B') (F1). By O1, y* prefers nu(A') to her partner, so d(A') < d(y*).
