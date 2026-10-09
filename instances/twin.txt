@@ -1,0 +1,7 @@
+n 16
+men_x_ranking 0 1 2 3 4 5 6 7 9 10 11 12 13 14 15 8
+men_y_ranking 9 10 11 12 13 14 15 0 1 2 3 8 4 5 6 7
+women_x_ranking 9 10 11 12 13 14 15 0 1 2 3 8 4 5 6 7
+women_y_ranking 0 1 2 3 4 5 6 7 9 10 11 12 13 14 8 15
+men_preferences XXXXXXXXXYYYYYYY
+women_preferences XXXXXXXXXYYYYYYY
