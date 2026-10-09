@@ -44,4 +44,4 @@ contradiction to the draft's batching method.
 
 Independent notes by an anonymous researcher overlap F4, the failures of label
 closure, and the refutation of F7. No text or code from that notes package is
-included. Neither those notes nor the draft is work by this repository's team.
+included.
